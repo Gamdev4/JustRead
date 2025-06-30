@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:justread/pages/home_page.dart';
+import 'package:get/get.dart';
+import 'package:justread/nav_bar.dart';
+import 'package:justread/core/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "JustRead",
-      home: HomePage(),
+      home: const NavBar(),
+      theme: lightMode,
+      darkTheme: darkMode,
     );
   }
 }
