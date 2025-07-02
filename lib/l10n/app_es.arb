@@ -1,6 +1,36 @@
 {
-  "@@locale": "en",
+  "@@locale": "es",
 
-  "wateringButtonText": "Watering Plants",
-  "@wateringButtonText": {},
+  "homePage": "Inicio",
+  "@homePage": {},
+  "libraryPage": "Biblioteca",
+  "@libraryPage": {},
+  "writePage": "Escribir",
+  "@writePage": {},
+  "profilePage": "Perfil",
+  "@profilePage": {},
+
+  "search": "Buscar",
+  "@search": {},
+
+  "continueReading": "Continuar",
+  "@continueReading": {},
+
+  "signIn": "Iniciar Sesión",
+  "@signIn": {},
+  "language": "Idioma",
+  "@language": {},
+  "darkMode": "Modo Oscuro",
+  "@darkMode": {},
+  "letterSize": "Tamaño de letra",
+  "@letterSize": {},
+  "textFont": "Fuente de texto",
+  "@textFont": {},
+
+  "selectLanguage": "Seleccionar idioma",
+  "@selectLanguage": {},
+  "cancel": "Cancelar",
+  "@cancel": {},
+  "submit": "Aceptar",
+  "@submit": {}
 }

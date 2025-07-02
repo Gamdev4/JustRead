@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:justread/core/widgets/search.dart';
+import 'package:justread/l10n/app_localizations.dart';
 
 class LibraryPage extends StatelessWidget {
   const LibraryPage({super.key});
@@ -9,45 +11,27 @@ class LibraryPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.primary,
 
-      // Search bar (UI only - non-functional)
-      appBar: AppBar(
-        centerTitle: true,
-        //backgroundColor: Colors.grey[900],
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(56.0),
+        child: SearchBarWidget(),
+      ),
 
-        title: IntrinsicWidth(
-          child: Column(
-            children: [
-              Padding(padding: EdgeInsets.only(bottom: 5),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.search, size: 20),
-                    SizedBox(width: 4),
-                    Text("Search", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey[500]),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                height: 1,
-                width: 250,
-                color: Theme.of(context).colorScheme.onPrimary,
-              ),
-            ],
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: SizedBox.expand(
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.secondary,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Padding(padding: EdgeInsets.all(10),
+              child: Text(AppLocalizations.of(context)!.libraryPage, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            ),
+            
           ),
         ),
-
       ),
 
-      // Continue Reading
-      body: Column(
-        children: [
-          Padding(padding: EdgeInsets.symmetric(horizontal: 70, vertical: 10)),
-          Text("Library", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))
-        ],
-      ),
-
-      // Reading Goal
 
     );
   }

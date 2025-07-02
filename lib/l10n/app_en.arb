@@ -1,0 +1,36 @@
+{
+  "@@locale": "en",
+
+  "homePage": "Home",
+  "@homePage": {},
+  "libraryPage": "Library",
+  "@libraryPage": {},
+  "writePage": "Write",
+  "@writePage": {},
+  "profilePage": "Profile",
+  "@profilePage": {},
+
+  "search": "Search",
+  "@search": {},
+
+  "continueReading": "Continue",
+  "@continueReading": {},
+
+  "signIn": "Sign In",
+  "@signIn": {},
+  "language": "Language",
+  "@language": {},
+  "darkMode": "Dark Mode",
+  "@darkMode": {},
+  "letterSize": "Letter Size",
+  "@letterSize": {},
+  "textFont": "Text Font",
+  "@textFont": {},
+
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {},
+  "cancel": "Cancel",
+  "@cancel": {},
+  "submit": "Submit",
+  "@submit": {}
+}
